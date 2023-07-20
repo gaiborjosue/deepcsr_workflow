@@ -62,7 +62,7 @@ jobs:
         DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_ACCESS_TOKEN }}
       run: |
-        cd DeepCSR/deepcsr/1.0
+        cd /home/runner/work/deepcsr_workflow/deepcsr_workflow/DeepCSR/deepcsr/1.0
         docker build -t neuronets/testing_image .
         docker login -u $DOCKER_HUB_USERNAME -p $DOCKER_HUB_PASSWORD
         docker push neuronets/testing_image
