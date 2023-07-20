@@ -1,5 +1,4 @@
 name: Docker Test
-
 on:
   push:
     branches: [ "master" ]
