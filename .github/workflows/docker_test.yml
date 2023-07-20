@@ -1,7 +1,10 @@
 name: Docker Test
 on:
+  pull_request:
+    types: [opened, synchronize, closed]
   push:
-    branches: [ "master" ]
+    branches:
+      - master
 
 jobs:
 
